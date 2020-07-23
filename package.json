@@ -1,0 +1,11 @@
+{
+  "name": "capn-midnight",
+  "version": "1.0.0",
+  "description": "Cap'n Midnight ===",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
