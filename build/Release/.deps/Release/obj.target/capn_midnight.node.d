@@ -1,0 +1,1 @@
+cmd_Release/obj.target/capn_midnight.node := g++ -o Release/obj.target/capn_midnight.node -shared -pthread -rdynamic -m64  -Wl,-soname=capn_midnight.node -Wl,--start-group Release/obj.target/capn_midnight/lib/capn_midnight.o -Wl,--end-group -lturbofec

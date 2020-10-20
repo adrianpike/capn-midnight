@@ -1,0 +1,3 @@
+[submodule "deps/turbofec"]
+	path = deps/turbofec
+	url = https://github.com/ttsou/turbofec
