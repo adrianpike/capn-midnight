@@ -47,7 +47,7 @@ INCS_Debug := \
 	-I/home/adrian/.cache/node-gyp/14.14.0/deps/uv/include \
 	-I/home/adrian/.cache/node-gyp/14.14.0/deps/zlib \
 	-I/home/adrian/.cache/node-gyp/14.14.0/deps/v8/include \
-	-I$(srcdir)/deps/turbofec/include
+	-I$(srcdir)/deps/aff3ct/src
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=capn_midnight' \
@@ -91,7 +91,7 @@ INCS_Release := \
 	-I/home/adrian/.cache/node-gyp/14.14.0/deps/uv/include \
 	-I/home/adrian/.cache/node-gyp/14.14.0/deps/zlib \
 	-I/home/adrian/.cache/node-gyp/14.14.0/deps/v8/include \
-	-I$(srcdir)/deps/turbofec/include
+	-I$(srcdir)/deps/aff3ct/src
 
 OBJS := \
 	$(obj).target/$(TARGET)/lib/capn_midnight.o
@@ -131,7 +131,8 @@ LDFLAGS_Release := \
 	-m64
 
 LIBS := \
-	-lturbofec
+	-L/home/adrian/src/capn-midnight/deps/aff3ct/lib/ -l:libaff3ct-2.3.5.so \
+	-Wl,-rpath,../deps/aff3ct/lib
 
 $(obj).target/capn_midnight.node: GYP_LDFLAGS := $(LDFLAGS_$(BUILDTYPE))
 $(obj).target/capn_midnight.node: LIBS := $(LIBS)

@@ -1,3 +1,6 @@
 [submodule "deps/turbofec"]
 	path = deps/turbofec
 	url = https://github.com/ttsou/turbofec
+[submodule "deps/aff3ct"]
+	path = deps/aff3ct
+	url = https://github.com/aff3ct/aff3ct
